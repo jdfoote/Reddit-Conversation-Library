@@ -1,0 +1,36 @@
+max_interactions : 50
+openai_models : 
+    - 'gpt-3.5-turbo'
+    - 'gpt-4-1106-preview'
+
+max_tokens:
+    gpt-3.5-turbo: 3000
+    gpt-4: 7000
+    gpt-4-1106-preview: 7000
+
+conversations_file : '../data/conversations.csv'
+to_contact_file : '../data/to_contact.csv'
+participants_file : '../data/participants.csv'
+subreddits_file : '../data/subreddit_rules.csv'
+bad_accounts_file : '../data/bad_accounts.csv'
+
+goodbye_message : "Thanks for chatting with me..."
+initial_message :
+    toxic_content: "Hello, I am a bot designed by..."
+    general_discussion: "Hello, I am a bot designed by..."
+
+clarifying_message : "Please reply with 'yes' if you would like to chat..."
+handoff_message : "Thank you for your interest..."
+
+first_consented_message :
+    specific: "Thank you for agreeing to chat..."
+    general: "Thank you for agreeing to chat..."
+    conversational: "Thank you for agreeing to chat..."
+    not-proud: "Thank you for agreeing to chat..."
+
+prompt_dict :
+    default: "Context: You are a chatbot designed by..."
+    narrative: "Context: You are a chatbot designed by..."
+    norms: "Context: You are a chatbot designed by..."
+    casual: "Context: You are a chatbot designed by..."
+    casual-general: "Context: You are a chatbot designed by..."
